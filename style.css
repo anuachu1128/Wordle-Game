@@ -1,0 +1,111 @@
+*{
+    background-color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+.heading{
+    text-align: center;
+    color: white;
+    align-items: center;
+    font-weight: bolder;
+    border-bottom: 1px solid #3a3a3c;
+}
+
+.container-fluid{
+    align-items: center;
+}
+
+#alertMessages{
+  display: flex;
+
+}
+
+td{
+  font-size: 1rem;
+    width: 75px;
+    height: 63px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+#wordleTable{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border-color:#3a3a3c; 
+  border-collapse: separate;
+  border-spacing: 0.4em 0.4em;
+  margin: auto;
+}
+
+.popupMessages{
+  position: relative;
+  user-select: none;
+}
+
+.popupMessages .alertMessage {
+  visibility: hidden;
+  width: 160px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popupMessages .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popupMessages .hide {
+  visibility: visible;
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+#keyboard, .row, .guessMessage{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+#keyboard-cont div {
+  display: flex;
+}
+  
+.second-row {
+  margin: 0.2rem 0;
+}
+  
+.keyboard-button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #3a3a3c;
+  color:white;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.text-center{
+  color: white;
+  font-weight: bold;
+  border-width: 1px 1px;
+}
+
+.alertMessage{
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
